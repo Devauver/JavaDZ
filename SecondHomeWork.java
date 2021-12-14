@@ -8,29 +8,21 @@ class SecondHomeWork {
     public static void main(String[]args) {
         System.out.println(checkSum(5, 15));
         isPositiveOrNegative(-1);
-        System.out.println(trueNegative(-1));
-        printSomeWords();
+        System.out.println(trueNegative(0));
+        printSomeWords("Hello", -2);
     }
-
     static boolean checkSum(int a, int b) {
         return a + b >= 10 && a + b <= 20;
     }
-    
     static void isPositiveOrNegative(int a) {
-       System.out.println((a >= 0) ? "positive" : "negative");
+        System.out.println((a >= 0) ? "positive" : "negative");
     }
-    
-        static boolean trueNegative(int c) {
-        if (c < 0) {
-            return true;
-        } else {
-            return false;
-        }
+    static boolean trueNegative(int c) {
+        return c < 0 ? true : false;
     }
-    
-    static void printSomeWords() {
-            for (int i = 0; i < 11; i++) {
-            System.out.println("Hello");
+    static void printSomeWords(String word, int times) {
+        for (times = times; times < 5; times++) {
+            System.out.println(word + " " + times);
         }
     }
 }
