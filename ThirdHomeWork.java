@@ -17,14 +17,14 @@ class ThirdHomeWork {
         int[] arr = { 1, 0, 1, 0, 0, 1 };
         System.out.println(Arrays.toString(arr));
         for (int i = 0; i < arr.length; i++) {
-            arr[0] = 0;
-            arr[1] = 1;
-            arr[2] = 0;
-            arr[3] = 1;
-            arr[4] = 1;
-            arr[5] = 0;
+            if ( arr[i] == 0 ) {
+                arr[i] += 1;
             }
-            System.out.println(Arrays.toString(arr));
+            else if ( arr[i] == 1 ) {
+                arr[i] -= 1;
+            }
+        }
+    System.out.println(Arrays.toString(arr));
     }
     static void fillArray() {
         int[]fill = new int[101];
@@ -36,13 +36,13 @@ class ThirdHomeWork {
     
     static void changeArray() {
         int[] chan = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
-        System.out.println(Arrays.toString(chan));
-        for (int i = 0; i < chan.length; i++) {
-            if (chan[i] < 6) {
-                chan[i] *= 2;
-            } 
-        }
-        System.out.println(Arrays.toString(chan));
+            System.out.println(Arrays.toString(chan));
+                for (int i = 0; i < chan.length; i++) {
+                    if (chan[i] < 6) {
+                        chan[i] *= 2;
+                    } 
+                }
+                System.out.println(Arrays.toString(chan));
     }
     static void fillDiagonal() {
         int [] [] di = new int [5] [5];
@@ -54,5 +54,4 @@ class ThirdHomeWork {
             System.out.println(Arrays.toString(di[i]));
         }
     }
-
 }
