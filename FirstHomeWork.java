@@ -20,7 +20,7 @@ class FirstHomeWork {
 
     static void checkSumSign() {
         int a = -20;
-        int b = 20;
+        int b = -40;
         System.out.println((a + b >= 0) ? "Sum positive" : "Sum negative");
     }
 
